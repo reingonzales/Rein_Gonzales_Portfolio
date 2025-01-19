@@ -1,13 +1,13 @@
 // CUSTOMIZE THIS FILE TO ADD YOUR OWN DATA
 
 const data = {
-    name: "John Doe",
-    bio: "Undergraduate Architectural Student at University of Calgary passionate about building tools to make homes more affordable.",
+    name: "REIN GONZALES",
+    bio: "Undergraduate Architectural Student at University of Calgary passionate about sustainable architecture, innovative urban design, and creating equitable built environments.",
     contact: {
-        email: "john.doe@gmail.com",
-        phone: "+12345678910",
-        linkedin: "https://www.linkedin.com/",
-        github: "https://www.github.com/",
+        email: "rein.gonzales@ucalgary.ca",
+        phone: "+4034014807",
+        linkedin: "https://www.linkedin.com/in/rein-gonzales-ab353a25a/",
+        github: "https://github.com/reingonzales",
     }
 }
 

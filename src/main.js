@@ -16,6 +16,15 @@ const trees = [
   "./treeDrawings/tree4.jpg",
 ];
 
+const Cadavres = [
+  "./Taggedpic/Cadavre Plot.png",
+  "./Taggedpic/Cadavre Plot2.png",
+  "./Taggedpic/Cadavre Plot3.png",
+  "./Taggedpic/Cadavre Plot4.png",
+  "./Taggedpic/Cadavre Plot5.png",
+  "./Taggedpic/Cadavre Plot6.png",
+];
+
 document.querySelector("#app").innerHTML = `
   <main id="container">
     <section id="heading">
@@ -25,24 +34,42 @@ document.querySelector("#app").innerHTML = `
 
     <section id="projects">
       <div id="project-row">
-      Model 1
+      1.0 CADAVRE EXQUIS: EVOLVING SELF
         <div class="three-model">
-          <div id="model1"></div>
+        <a href="./PORTFOLIO/Cadavre Main.png" target="_blank">
+        <img src="./PORTFOLIO/Cadavre Main.png" id="model1" alt="Model 1 Image" />
+        </a>
+
+        
         </div>
         <div id="images-description">
           <div id="images">
-            ${cubes
-              .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
-              )
-              .join("")}
-          </div>
-          <h4 id="description">A cubic 3D model is a geometric representation of a cube, consisting of six equal square faces joined at right angles. Each edge of the cube is of equal length, forming a symmetrical, rigid structure. The model can be textured, colored, or transparent, and it may include variations such as beveled edges or hollow interiors, depending on its intended purpose in design, animation, or engineering.</h4>
+   <a href="./Taggedpic/Cadavre Plot.png" target="_blank">
+    <img src="./Taggedpic/Cadavre Plot.png" alt="cube1" />
+  </a>
+  <a href="./Taggedpic/Cadavre Plot2.png" target="_blank">
+    <img src="./Taggedpic/Cadavre Plot2.png" alt="cube2" />
+  </a>
+  <a href="./Taggedpic/Cadavre Plot3.png" target="_blank">
+    <img src="./Taggedpic/Cadavre Plot3.png" alt="cube3" />
+  </a>
+  <a href="./Taggedpic/Cadavre Plot4.png" target="_blank">
+    <img src="./Taggedpic/Cadavre Plot4.png" alt="cube4" />
+    </a>
+  <a href="./Taggedpic/Cadavre Plot5.png" target="_blank">
+    <img src="./Taggedpic/Cadavre Plot5.png" alt="cube4" />
+    </a>
+  <a href="./Taggedpic/Cadavre Plot6.png" target="_blank">
+    <img src="./Taggedpic/Cadavre Plot6.png" alt="cube4" />
+  </a>
+</div>
+          <h4 id="description">The gift of life is an impermanent, fleeting experience that gives us opportunities to create memories and embrace the present moment. Trusting our intuitions and pursuing what brings fulfillment, acts as a guide for helping us navigate uncertainty in our futures. It’s a reminder that discomfort is a sign of growth and change, reminding us that we hold the power to add meaningful memories and experiences to our lives. Collections of cultivated lessons, values and connections help shape our identities, becoming vital players in self-discovery and confidence in our unique journeys.</h4>
         </div>
       </div>
-
-      <div id="project-row">
-      Model 2
+      
+    ${/* Model 2 commented out         
+    <div id="project-row">
+    Model 2
         <div class="three-model">
           <div id="model2"></div>
         </div>
@@ -58,24 +85,28 @@ document.querySelector("#app").innerHTML = `
           <h4 id="description">A 3D tree model is a geometric representation of a tree, featuring a trunk, branches, and foliage. The trunk is typically cylindrical, with textured bark, while the branches extend outward to support leaves or a canopy. It may include roots or flowers for added detail.</h4>
         </div>
       </div>
+      */ ""}
 
-      <div id="project-row">
-      Model 3
-        <div class="three-model">
-          <div id="model3"></div>
-        </div>
-        <div id="images-description">
-          <div id="images">
-            ${cubes
-              .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
-              )
-              .join("")}
+    ${/* Model 2 commented out  
+     <div id="project-row">
+     Model 3 
+          <div class="three-model">
+            <div id="model3"></div>
           </div>
-          <h4 id="description">A 3D house model is a geometric representation of a house, featuring walls, a roof, and windows. It often includes additional details such as doors, chimneys, and balconies, with textures like brick, wood, or stucco to enhance realism. The interior may also feature rooms, furniture, and lighting for a more detailed design.</h4>
-        </div>
-      </div>
-    </section>
+          <div id="images-description">
+            <div id="images">
+             ${Cadavre
+                .map(
+                  (Cadavre, index) => `<img src="${Cadavre}" alt="Cadavre${index + 1}" />`
+                )
+                .join("")}
+              </div>
+              <h4 id="description">A 3D house model is a geometric representation of a house, featuring walls, a roof, and windows. It often includes additional details such as doors, chimneys, and balconies, with textures like brick, wood, or stucco to enhance realism. The interior may also feature rooms, furniture, and lighting for a more detailed design.</h4>
+            </div>
+          </div>
+          */ ""}
+        </section>
+
 
     <ul id="footer-items">
       <li>Email: ${data.contact.email}</li>
@@ -91,6 +122,6 @@ document.querySelector("#app").innerHTML = `
 `;
 
 // Create three.js scenes for each
-createThreeScene("#model1", "/3DModels/project1/cube.obj");
-createThreeScene("#model2", "/3DModels/project2/tree.obj");
-createThreeScene("#model3", "/3DModels/project3/cottage.obj");
+// createThreeScene("#model1", "/3DModels/project1/cube.obj");
+// createThreeScene("#model2", "/3DModels/project2/tree.obj");
+// createThreeScene("#model3", "/3DModels/project3/cottage.obj");
