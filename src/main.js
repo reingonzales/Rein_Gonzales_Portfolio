@@ -25,6 +25,15 @@ const Cadavres = [
   "./Taggedpic/Cadavre Plot6.png",
 ];
 
+const Charts = [
+  "./A2 Pictures (Jpeg)/PavillionChart02.png",
+  "./A2 Pictures (Jpeg)/TorusChart02.png",
+  "./A2 Pictures (Jpeg)/SmiskiChart02.png",
+  "./A2 Pictures (Jpeg)/Highpolymodel.png",
+  "./A2 Pictures (Jpeg)/lowpolymodel.png",
+ 
+];
+
 document.querySelector("#app").innerHTML = `
   <main id="container">
     <section id="heading">
@@ -67,25 +76,43 @@ document.querySelector("#app").innerHTML = `
         </div>
       </div>
       
-    ${/* Model 2 commented out         
+            
     <div id="project-row">
-    Model 2
+    2.0 INTEROP(erability)
         <div class="three-model">
+       
+
           <div id="model2"></div>
         </div>
         <div id="images-description">
           <div id="images">
-            ${trees
-              .map(
-                (trees, index) =>
-                  `<img src="${trees}" alt="tree${index + 1}" />`
-              )
-              .join("")}
+                </div>
+        <div id="images-description">
+          <div id="images">
+   <a href="./A2 Pictures (Jpeg)/PavillionChart02.png" target="_blank">
+    <img src="./A2 Pictures (Jpeg)/PavillionChart02.png" alt="cube1" />
+  </a>
+  <a href="./A2 Pictures (Jpeg)/TorusChart02.png" target="_blank">
+    <img src="./A2 Pictures (Jpeg)/TorusChart02.png" alt="cube2" />
+  </a>
+  <a href="./A2 Pictures (Jpeg)/SmiskiChart02.png" target="_blank">
+    <img src="./A2 Pictures (Jpeg)/SmiskiChart02.png" alt="cube3" />
+  </a>
+  <a href="./A2 Pictures (Jpeg)/Highpolymodel.png" target="_blank">
+    <img src="./A2 Pictures (Jpeg)/Highpolymodel.png" alt="cube4" />
+    </a>
+  <a href="./A2 Pictures (Jpeg)/lowpolymodel.png" target="_blank">
+    <img src="./A2 Pictures (Jpeg)/lowpolymodel.png" alt="cube4" />
+    </a>
+    <a href="./A2 Pictures (Jpeg)/reflection.png" target="_blank">
+    <img src="./A2 Pictures (Jpeg)/reflection.png" alt="cube4" />
+  </a>
+            
           </div>
-          <h4 id="description">A 3D tree model is a geometric representation of a tree, featuring a trunk, branches, and foliage. The trunk is typically cylindrical, with textured bark, while the branches extend outward to support leaves or a canopy. It may include roots or flowers for added detail.</h4>
+          <h4 id="description">By understanding and exploring file formats such as OBJ, FBX, STL and GLB, insights into interoperability were created and provided background into how these file types handle 3d Models when interchanging between Rhino and Blender.</h4>
         </div>
       </div>
-      */ ""}
+     
 
     ${/* Model 2 commented out  
      <div id="project-row">
@@ -95,9 +122,9 @@ document.querySelector("#app").innerHTML = `
           </div>
           <div id="images-description">
             <div id="images">
-             ${Cadavre
+             ${Chart
                 .map(
-                  (Cadavre, index) => `<img src="${Cadavre}" alt="Cadavre${index + 1}" />`
+                  (Chart, index) => `<img src="${Chart}" alt="Chart${index + 1}" />`
                 )
                 .join("")}
               </div>
@@ -123,5 +150,5 @@ document.querySelector("#app").innerHTML = `
 
 // Create three.js scenes for each
 // createThreeScene("#model1", "/3DModels/project1/cube.obj");
-// createThreeScene("#model2", "/3DModels/project2/tree.obj");
+createThreeScene("#model2", "/3DModels/a2/portfolio.obj");
 // createThreeScene("#model3", "/3DModels/project3/cottage.obj");

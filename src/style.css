@@ -4,7 +4,7 @@
   line-height: 1.5;
   font-weight: 200;
   color: rgba(69, 50, 28, 0.87);
-  background-color: hsl(#939393);
+  background-color: hsl(#999797);
 }
 
 * {
@@ -96,7 +96,6 @@ h1 {
 }
 
 #model1,
-#model2,
 #model3 {
   height: 500px;
   width: 350px;
@@ -104,6 +103,16 @@ h1 {
   margin-left: 6em;
   border: 5px solid #191010;
 }
+
+#model2 {
+  height: 600px;
+  width: 500px;
+  margin-right: 1em;
+  margin-left: 6em;
+  border: 5px solid #191010; 
+}
+
+
 
 img {
   /* Image dimensions and margin */
@@ -130,15 +139,17 @@ img {
 }
 
 #description {
-  /* Center description content */
-  display: flex;
-  align-items: center;
-  height: 5em;
-  width: 45em;
-  font-weight: 500;
-  margin-left: 2em;
-  margin-top: 16em;
-}
+    /* Center description content */
+    display: flex;
+    align-items: center;
+    height: 5em;
+    width: 45em;
+    font-weight: 500;
+    margin-left: 2em;
+    margin-top: 16em;
+    
+  }
+
 
 @media screen and (max-width: 768px) {
   #footer-items {
